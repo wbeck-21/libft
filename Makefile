@@ -33,5 +33,11 @@ ${NAME}: ${OBJS}
 
 %.o:	%.c ${LIBH}
 			${CC} ${FLAGS} -c $< -o $@
+
+clean:
+		$(RM) $(OBJS)
+
+fclean:	clean
+		$(RM) $(NAME)
 			
 .PHONY:	all clean fclean re
