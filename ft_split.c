@@ -6,7 +6,7 @@
 /*   By: wbeck <wbeck@student.21-school.ru>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 14:11:32 by wbeck             #+#    #+#             */
-/*   Updated: 2021/10/13 16:31:06 by wbeck            ###   ########.fr       */
+/*   Updated: 2022/02/24 13:14:59 by wbeck            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,13 +78,11 @@ char	**ft_fulltab(char **res, char const *s, char c)
 char	**ft_split(char const *s, char c)
 {
 	char	**res;
-	int		i;
 
 	if (!s)
 		return (NULL);
 	res = (char **)malloc(sizeof(char *) * ft_lentab(s, c) + 1);
 	if (res)
 		res = ft_fulltab(res, s, c);
-	i = 0;
 	return (res);
 }

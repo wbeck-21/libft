@@ -6,7 +6,7 @@
 /*   By: wbeck <wbeck@student.21-school.ru>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/10 14:19:34 by wbeck             #+#    #+#             */
-/*   Updated: 2021/10/24 17:11:24 by wbeck            ###   ########.fr       */
+/*   Updated: 2022/02/24 13:15:45 by wbeck            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		res[j] = '\0';
 	}
 	return (res);
-}
-
-#include <stdio.h>
-int main ()
-{
-    char *s = ft_substr("tripouille", 0, 42000);
-	printf("%s", s);
 }
